@@ -1,0 +1,37 @@
+benholko2001@LAPTOP-PAVD2557:~/demo$ man uname
+benholko2001@LAPTOP-PAVD2557:~/demo$ uname -a
+Linux LAPTOP-PAVD2557 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+benholko2001@LAPTOP-PAVD2557:~/demo$ ifcinfig
+Command 'ifcinfig' not found, did you mean:
+  command 'ifconfig' from deb net-tools (1.60+git20181103.0eebece-1ubuntu5)
+Try: sudo apt install <deb name>
+benholko2001@LAPTOP-PAVD2557:~/demo$ ifconfig
+Command 'ifconfig' not found, but can be installed with:
+sudo apt install net-tools
+benholko2001@LAPTOP-PAVD2557:~/demo$ ping localhost
+PING localhost (127.0.0.1) 56(84) bytes of data.
+64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.084 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=2 ttl=64 time=0.023 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=3 ttl=64 time=0.022 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=4 ttl=64 time=0.022 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=5 ttl=64 time=0.022 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=6 ttl=64 time=0.022 ms
+
+64 bytes from localhost (127.0.0.1): icmp_seq=7 ttl=64 time=0.024 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=8 ttl=64 time=0.022 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=9 ttl=64 time=0.023 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=10 ttl=64 time=0.022 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=11 ttl=64 time=0.022 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=12 ttl=64 time=0.023 ms
+64 bytes from localhost (127.0.0.1): icmp_seq=13 ttl=64 time=0.023 ms
+^Z
+[1]+  Stopped                 ping localhost
+benholko2001@LAPTOP-PAVD2557:~/demo$ netstat
+Command 'netstat' not found, but can be installed with:
+sudo apt install net-tools
+benholko2001@LAPTOP-PAVD2557:~/demo$
+
+
+
+
+Earlier lines were cleared by clear command as stated in the slides
