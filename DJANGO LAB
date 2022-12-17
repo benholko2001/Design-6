@@ -1,0 +1,528 @@
+Windows Subsystem for Linux is now available in the Microsoft Store!
+You can upgrade by running 'wsl.exe --update' or by visiting https://aka.ms/wslstorepage
+Installing WSL from the Microsoft Store will give you the latest WSL updates, faster.
+For more information please visit https://aka.ms/wslstoreinfo
+
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+This message is shown once a day. To disable it please create the
+/home/benholko2001/.hushlogin file.
+benholko2001@LAPTOP-PAVD2557:~$ pip3 -V
+pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+benholko2001@LAPTOP-PAVD2557:~$ pip3 list
+Package                Version
+---------------------- ---------------
+blinker                1.4
+command-not-found      0.3
+cryptography           3.4.8
+dbus-python            1.2.18
+distro                 1.7.0
+distro-info            1.1build1
+httplib2               0.20.2
+importlib-metadata     4.6.4
+jeepney                0.7.1
+keyring                23.5.0
+launchpadlib           1.10.16
+lazr.restfulclient     0.14.4
+lazr.uri               1.0.6
+more-itertools         8.10.0
+netifaces              0.11.0
+oauthlib               3.2.0
+pip                    22.0.2
+PyGObject              3.42.1
+PyJWT                  2.3.0
+pyparsing              2.4.7
+python-apt             2.3.0+ubuntu2.1
+PyYAML                 5.4.1
+SecretStorage          3.3.1
+setuptools             59.6.0
+six                    1.16.0
+systemd-python         234
+ubuntu-advantage-tools 27.11.2
+ufw                    0.36.1
+unattended-upgrades    0.1
+wadllib                1.3.6
+wheel                  0.37.1
+zipp                   1.0.0
+benholko2001@LAPTOP-PAVD2557:~$ sudo pip3 install -U setuptools
+[sudo] password for benholko2001:
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (59.6.0)
+Collecting setuptools
+  Downloading setuptools-65.6.3-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 22.5 MB/s eta 0:00:00
+Installing collected packages: setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.6.0
+    Not uninstalling setuptools at /usr/lib/python3/dist-packages, outside environment /usr
+    Can't uninstall 'setuptools'. No files were found to uninstall.
+Successfully installed setuptools-65.6.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+benholko2001@LAPTOP-PAVD2557:~$ sudo pip3 install -U django
+Collecting django
+  Downloading Django-4.1.4-py3-none-any.whl (8.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 28.5 MB/s eta 0:00:00
+Collecting asgiref<4,>=3.5.2
+  Downloading asgiref-3.5.2-py3-none-any.whl (22 kB)
+Collecting sqlparse>=0.2.2
+  Downloading sqlparse-0.4.3-py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.8/42.8 KB 8.1 MB/s eta 0:00:00
+Installing collected packages: sqlparse, asgiref, django
+Successfully installed asgiref-3.5.2 django-4.1.4 sqlparse-0.4.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+benholko2001@LAPTOP-PAVD2557:~$  sudo pip3 install -U djangorestframework
+Collecting djangorestframework
+  Downloading djangorestframework-3.14.0-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 15.0 MB/s eta 0:00:00
+Collecting pytz
+  Downloading pytz-2022.6-py2.py3-none-any.whl (498 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 498.1/498.1 KB 71.3 MB/s eta 0:00:00
+Requirement already satisfied: django>=3.0 in /usr/local/lib/python3.10/dist-packages (from djangorestframework) (4.1.4)Requirement already satisfied: sqlparse>=0.2.2 in /usr/local/lib/python3.10/dist-packages (from django>=3.0->djangorestframework) (0.4.3)
+Requirement already satisfied: asgiref<4,>=3.5.2 in /usr/local/lib/python3.10/dist-packages (from django>=3.0->djangorestframework) (3.5.2)
+Installing collected packages: pytz, djangorestframework
+Successfully installed djangorestframework-3.14.0 pytz-2022.6
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+benholko2001@LAPTOP-PAVD2557:~$  sudo pip3 install -U django-filter
+Collecting django-filter
+  Downloading django_filter-22.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 KB 2.9 MB/s eta 0:00:00
+Requirement already satisfied: Django>=3.2 in /usr/local/lib/python3.10/dist-packages (from django-filter) (4.1.4)
+Requirement already satisfied: asgiref<4,>=3.5.2 in /usr/local/lib/python3.10/dist-packages (from Django>=3.2->django-filter) (3.5.2)
+Requirement already satisfied: sqlparse>=0.2.2 in /usr/local/lib/python3.10/dist-packages (from Django>=3.2->django-filter) (0.4.3)
+Installing collected packages: django-filter
+Successfully installed django-filter-22.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+benholko2001@LAPTOP-PAVD2557:~$ sudo pip3 install -U markdown
+Collecting markdown
+  Downloading Markdown-3.4.1-py3-none-any.whl (93 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.3/93.3 KB 3.9 MB/s eta 0:00:00
+Installing collected packages: markdown
+Successfully installed markdown-3.4.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+benholko2001@LAPTOP-PAVD2557:~$ sudo pip3 install -U requests
+Collecting requests
+  Downloading requests-2.28.1-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 1.9 MB/s eta 0:00:00
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.13-py2.py3-none-any.whl (140 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.6/140.6 KB 8.4 MB/s eta 0:00:00
+Collecting charset-normalizer<3,>=2
+  Downloading charset_normalizer-2.1.1-py3-none-any.whl (39 kB)
+Collecting idna<4,>=2.5
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 12.8 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+  Downloading certifi-2022.12.7-py3-none-any.whl (155 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 KB 23.7 MB/s eta 0:00:00
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2022.12.7 charset-normalizer-2.1.1 idna-3.4 requests-2.28.1 urllib3-1.26.13
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+benholko2001@LAPTOP-PAVD2557:~$  sudo apt update
+ apt install mariadb-server mariadb-client
+$ sudo apt install python3-mysqldb
+$ sudo pip3 install -U mysqlcli$ sudo apt install mariadb-server mariadb-client
+$ sudo apt install python3-mysqldb
+$ sudo pip3 install -U mysqlclient
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:2 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [532 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [114 kB]
+Hit:4 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [7388 B]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [460 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [70.5 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [532 B]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [622 kB]
+Get:10 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [82.9 kB]
+Get:11 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [11.0 kB]
+Get:12 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [4268 B]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [972 B]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [228 B]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [114 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [99.8 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [769 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [172 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [11.5 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [498 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [76.3 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [532 B]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [767 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [130 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [14.2 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [7300 B]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [2432 B]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [420 B]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [3324 B]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [1580 B]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [272 B]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [6740 B]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [9460 B]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [348 B]
+Fetched 4700 kB in 1s (4246 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+50 packages can be upgraded. Run 'apt list --upgradable' to see them.
+benholko2001@LAPTOP-PAVD2557:~$ Enter current password for root (enter for none):
+-bash: syntax error near unexpected token `('
+benholko2001@LAPTOP-PAVD2557:~$ Enter current password for root
+Enter: command not found
+benholko2001@LAPTOP-PAVD2557:~$  sudo mysql_secure_installation
+sudo: mysql_secure_installation: command not found
+benholko2001@LAPTOP-PAVD2557:~$ sudo apt install mariadb-server mariadb-client
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  galera-4 libcgi-fast-perl libcgi-pm-perl libclone-perl libconfig-inifiles-perl libdaxctl1 libdbd-mysql-perl
+  libdbi-perl libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmariadb3
+  libmysqlclient21 libndctl6 libpmem1 libsnappy1v5 libterm-readkey-perl libtimedate-perl liburi-perl liburing2
+  libwrap0 mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common mariadb-server-10.6 mariadb-server-core-10.6
+  mysql-common socat
+Suggested packages:
+  libmldbm-perl libnet-daemon-perl libsql-statement-perl libdata-dump-perl libipc-sharedcache-perl
+  libbusiness-isbn-perl libwww-perl mailx mariadb-test
+The following NEW packages will be installed:
+  galera-4 libcgi-fast-perl libcgi-pm-perl libclone-perl libconfig-inifiles-perl libdaxctl1 libdbd-mysql-perl
+  libdbi-perl libencode-locale-perl libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmariadb3
+  libmysqlclient21 libndctl6 libpmem1 libsnappy1v5 libterm-readkey-perl libtimedate-perl liburi-perl liburing2
+  libwrap0 mariadb-client mariadb-client-10.6 mariadb-client-core-10.6 mariadb-common mariadb-server
+  mariadb-server-10.6 mariadb-server-core-10.6 mysql-common socat
+0 upgraded, 38 newly installed, 0 to remove and 50 not upgraded.
+Need to get 18.6 MB of archives.
+After this operation, 165 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7212 B]
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-common all 1:10.6.11-0ubuntu0.22.04.1 [16.6 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 galera-4 amd64 26.4.9-1build1 [720 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdbi-perl amd64 1.643-3build3 [741 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 libconfig-inifiles-perl all 3.000003-1 [40.5 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 libmariadb3 amd64 1:10.6.11-0ubuntu0.22.04.1 [174 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-client-core-10.6 amd64 1:10.6.11-0ubuntu0.22.04.1 [920 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-client-10.6 amd64 1:10.6.11-0ubuntu0.22.04.1 [1533 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdaxctl1 amd64 72.1-1 [19.8 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 libndctl6 amd64 72.1-1 [57.7 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpmem1 amd64 1.11.1-3build1 [81.4 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsnappy1v5 amd64 1.1.8-1build3 [17.5 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy/main amd64 liburing2 amd64 2.1-2build1 [10.3 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-server-core-10.6 amd64 1:10.6.11-0ubuntu0.22.04.1 [7682 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy/main amd64 libwrap0 amd64 7.6.q-31build2 [47.9 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/main amd64 socat amd64 1.7.4.1-3ubuntu4 [349 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-server-10.6 amd64 1:10.6.11-0ubuntu0.22.04.1 [4078 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy/main amd64 libhtml-tagset-perl all 3.20-4 [12.5 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy/main amd64 liburi-perl all 5.10-1 [78.8 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy/main amd64 libhtml-parser-perl amd64 3.76-1build2 [88.4 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-pm-perl all 4.54-1 [188 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi0ldbl amd64 2.4.2-2build2 [28.0 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-perl amd64 0.82+ds-1build1 [22.8 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcgi-fast-perl all 1:2.15-1 [10.5 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy/main amd64 libclone-perl amd64 0.45-1build3 [11.0 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libmysqlclient21 amd64 8.0.31-0ubuntu0.22.04.1 [1301 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libdbd-mysql-perl amd64 4.050-5 [87.6 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy/main amd64 libencode-locale-perl all 1.05-1.1 [11.8 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy/main amd64 libfcgi-bin amd64 2.4.2-2build2 [11.2 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy/main amd64 libhtml-template-perl all 2.97-1.1 [59.1 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy/main amd64 libtimedate-perl all 2.3300-2 [34.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy/main amd64 libhttp-date-perl all 6.05-1 [9920 B]
+Get:33 http://archive.ubuntu.com/ubuntu jammy/main amd64 libio-html-perl all 1.004-2 [15.4 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy/main amd64 liblwp-mediatypes-perl all 6.04-1 [19.5 kB]
+Get:35 http://archive.ubuntu.com/ubuntu jammy/main amd64 libhttp-message-perl all 6.36-1 [76.8 kB]
+Get:36 http://archive.ubuntu.com/ubuntu jammy/main amd64 libterm-readkey-perl amd64 2.38-1build4 [25.2 kB]
+Get:37 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-client all 1:10.6.11-0ubuntu0.22.04.1 [11.6 kB]
+Get:38 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 mariadb-server all 1:10.6.11-0ubuntu0.22.04.1 [11.8 kB]
+Fetched 18.6 MB in 2s (10.4 MB/s)
+Extracting templates from packages: 100%
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 31277 files and directories currently installed.)
+Preparing to unpack .../00-mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package mariadb-common.
+Preparing to unpack .../01-mariadb-common_1%3a10.6.11-0ubuntu0.22.04.1_all.deb ...
+Unpacking mariadb-common (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package galera-4.
+Preparing to unpack .../02-galera-4_26.4.9-1build1_amd64.deb ...
+Unpacking galera-4 (26.4.9-1build1) ...
+Selecting previously unselected package libdbi-perl:amd64.
+Preparing to unpack .../03-libdbi-perl_1.643-3build3_amd64.deb ...
+Unpacking libdbi-perl:amd64 (1.643-3build3) ...
+Selecting previously unselected package libconfig-inifiles-perl.
+Preparing to unpack .../04-libconfig-inifiles-perl_3.000003-1_all.deb ...
+Unpacking libconfig-inifiles-perl (3.000003-1) ...
+Selecting previously unselected package libmariadb3:amd64.
+Preparing to unpack .../05-libmariadb3_1%3a10.6.11-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmariadb3:amd64 (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mariadb-client-core-10.6.
+Preparing to unpack .../06-mariadb-client-core-10.6_1%3a10.6.11-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mariadb-client-core-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mariadb-client-10.6.
+Preparing to unpack .../07-mariadb-client-10.6_1%3a10.6.11-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mariadb-client-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libdaxctl1:amd64.
+Preparing to unpack .../08-libdaxctl1_72.1-1_amd64.deb ...
+Unpacking libdaxctl1:amd64 (72.1-1) ...
+Selecting previously unselected package libndctl6:amd64.
+Preparing to unpack .../09-libndctl6_72.1-1_amd64.deb ...
+Unpacking libndctl6:amd64 (72.1-1) ...
+Selecting previously unselected package libpmem1:amd64.
+Preparing to unpack .../10-libpmem1_1.11.1-3build1_amd64.deb ...
+Unpacking libpmem1:amd64 (1.11.1-3build1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../11-libsnappy1v5_1.1.8-1build3_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.8-1build3) ...
+Selecting previously unselected package liburing2:amd64.
+Preparing to unpack .../12-liburing2_2.1-2build1_amd64.deb ...
+Unpacking liburing2:amd64 (2.1-2build1) ...
+Selecting previously unselected package mariadb-server-core-10.6.
+Preparing to unpack .../13-mariadb-server-core-10.6_1%3a10.6.11-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mariadb-server-core-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libwrap0:amd64.
+Preparing to unpack .../14-libwrap0_7.6.q-31build2_amd64.deb ...
+Unpacking libwrap0:amd64 (7.6.q-31build2) ...
+Selecting previously unselected package socat.
+Preparing to unpack .../15-socat_1.7.4.1-3ubuntu4_amd64.deb ...
+Unpacking socat (1.7.4.1-3ubuntu4) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Setting up mariadb-common (1:10.6.11-0ubuntu0.22.04.1) ...
+update-alternatives: using /etc/mysql/mariadb.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+Selecting previously unselected package mariadb-server-10.6.
+(Reading database ... 31749 files and directories currently installed.)
+Preparing to unpack .../00-mariadb-server-10.6_1%3a10.6.11-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mariadb-server-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libhtml-tagset-perl.
+Preparing to unpack .../01-libhtml-tagset-perl_3.20-4_all.deb ...
+Unpacking libhtml-tagset-perl (3.20-4) ...
+Selecting previously unselected package liburi-perl.
+Preparing to unpack .../02-liburi-perl_5.10-1_all.deb ...
+Unpacking liburi-perl (5.10-1) ...
+Selecting previously unselected package libhtml-parser-perl:amd64.
+Preparing to unpack .../03-libhtml-parser-perl_3.76-1build2_amd64.deb ...
+Unpacking libhtml-parser-perl:amd64 (3.76-1build2) ...
+Selecting previously unselected package libcgi-pm-perl.
+Preparing to unpack .../04-libcgi-pm-perl_4.54-1_all.deb ...
+Unpacking libcgi-pm-perl (4.54-1) ...
+Selecting previously unselected package libfcgi0ldbl:amd64.
+Preparing to unpack .../05-libfcgi0ldbl_2.4.2-2build2_amd64.deb ...
+Unpacking libfcgi0ldbl:amd64 (2.4.2-2build2) ...
+Selecting previously unselected package libfcgi-perl:amd64.
+Preparing to unpack .../06-libfcgi-perl_0.82+ds-1build1_amd64.deb ...
+Unpacking libfcgi-perl:amd64 (0.82+ds-1build1) ...
+Selecting previously unselected package libcgi-fast-perl.
+Preparing to unpack .../07-libcgi-fast-perl_1%3a2.15-1_all.deb ...
+Unpacking libcgi-fast-perl (1:2.15-1) ...
+Selecting previously unselected package libclone-perl.
+Preparing to unpack .../08-libclone-perl_0.45-1build3_amd64.deb ...
+Unpacking libclone-perl (0.45-1build3) ...
+Selecting previously unselected package libmysqlclient21:amd64.
+Preparing to unpack .../09-libmysqlclient21_8.0.31-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking libmysqlclient21:amd64 (8.0.31-0ubuntu0.22.04.1) ...
+Selecting previously unselected package libdbd-mysql-perl:amd64.
+Preparing to unpack .../10-libdbd-mysql-perl_4.050-5_amd64.deb ...
+Unpacking libdbd-mysql-perl:amd64 (4.050-5) ...
+Selecting previously unselected package libencode-locale-perl.
+Preparing to unpack .../11-libencode-locale-perl_1.05-1.1_all.deb ...
+Unpacking libencode-locale-perl (1.05-1.1) ...
+Selecting previously unselected package libfcgi-bin.
+Preparing to unpack .../12-libfcgi-bin_2.4.2-2build2_amd64.deb ...
+Unpacking libfcgi-bin (2.4.2-2build2) ...
+Selecting previously unselected package libhtml-template-perl.
+Preparing to unpack .../13-libhtml-template-perl_2.97-1.1_all.deb ...
+Unpacking libhtml-template-perl (2.97-1.1) ...
+Selecting previously unselected package libtimedate-perl.
+Preparing to unpack .../14-libtimedate-perl_2.3300-2_all.deb ...
+Unpacking libtimedate-perl (2.3300-2) ...
+Selecting previously unselected package libhttp-date-perl.
+Preparing to unpack .../15-libhttp-date-perl_6.05-1_all.deb ...
+Unpacking libhttp-date-perl (6.05-1) ...
+Selecting previously unselected package libio-html-perl.
+Preparing to unpack .../16-libio-html-perl_1.004-2_all.deb ...
+Unpacking libio-html-perl (1.004-2) ...
+Selecting previously unselected package liblwp-mediatypes-perl.
+Preparing to unpack .../17-liblwp-mediatypes-perl_6.04-1_all.deb ...
+Unpacking liblwp-mediatypes-perl (6.04-1) ...
+Selecting previously unselected package libhttp-message-perl.
+Preparing to unpack .../18-libhttp-message-perl_6.36-1_all.deb ...
+Unpacking libhttp-message-perl (6.36-1) ...
+Selecting previously unselected package libterm-readkey-perl.
+Preparing to unpack .../19-libterm-readkey-perl_2.38-1build4_amd64.deb ...
+Unpacking libterm-readkey-perl (2.38-1build4) ...
+Selecting previously unselected package mariadb-client.
+Preparing to unpack .../20-mariadb-client_1%3a10.6.11-0ubuntu0.22.04.1_all.deb ...
+Unpacking mariadb-client (1:10.6.11-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mariadb-server.
+Preparing to unpack .../21-mariadb-server_1%3a10.6.11-0ubuntu0.22.04.1_all.deb ...
+Unpacking mariadb-server (1:10.6.11-0ubuntu0.22.04.1) ...
+Setting up libconfig-inifiles-perl (3.000003-1) ...
+Setting up galera-4 (26.4.9-1build1) ...
+Setting up libmysqlclient21:amd64 (8.0.31-0ubuntu0.22.04.1) ...
+Setting up libfcgi0ldbl:amd64 (2.4.2-2build2) ...
+Setting up libclone-perl (0.45-1build3) ...
+Setting up libhtml-tagset-perl (3.20-4) ...
+Setting up liblwp-mediatypes-perl (6.04-1) ...
+Setting up libfcgi-bin (2.4.2-2build2) ...
+Setting up libencode-locale-perl (1.05-1.1) ...
+Setting up libsnappy1v5:amd64 (1.1.8-1build3) ...
+Setting up libwrap0:amd64 (7.6.q-31build2) ...
+Setting up socat (1.7.4.1-3ubuntu4) ...
+Setting up libio-html-perl (1.004-2) ...
+Setting up libmariadb3:amd64 (1:10.6.11-0ubuntu0.22.04.1) ...
+Setting up libdaxctl1:amd64 (72.1-1) ...
+Setting up libtimedate-perl (2.3300-2) ...
+Setting up libndctl6:amd64 (72.1-1) ...
+Setting up libfcgi-perl:amd64 (0.82+ds-1build1) ...
+Setting up libterm-readkey-perl (2.38-1build4) ...
+Setting up liburing2:amd64 (2.1-2build1) ...
+Setting up libpmem1:amd64 (1.11.1-3build1) ...
+Setting up liburi-perl (5.10-1) ...
+Setting up libdbi-perl:amd64 (1.643-3build3) ...
+Setting up mariadb-server-core-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Setting up libhttp-date-perl (6.05-1) ...
+Setting up mariadb-client-core-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Setting up libdbd-mysql-perl:amd64 (4.050-5) ...
+Setting up libhtml-parser-perl:amd64 (3.76-1build2) ...
+Setting up mariadb-client-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+Setting up libhttp-message-perl (6.36-1) ...
+Setting up mariadb-client (1:10.6.11-0ubuntu0.22.04.1) ...
+Setting up libcgi-pm-perl (4.54-1) ...
+Setting up libhtml-template-perl (2.97-1.1) ...
+Setting up mariadb-server-10.6 (1:10.6.11-0ubuntu0.22.04.1) ...
+invoke-rc.d: could not determine current runlevel
+ * Stopping MariaDB database server mariadbd                                                                     [ OK ]
+Created symlink /etc/systemd/system/multi-user.target.wants/mariadb.service → /lib/systemd/system/mariadb.service.
+invoke-rc.d: could not determine current runlevel
+Setting up libcgi-fast-perl (1:2.15-1) ...
+Setting up mariadb-server (1:10.6.11-0ubuntu0.22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+/sbin/ldconfig.real: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+
+benholko2001@LAPTOP-PAVD2557:~$ sudo apt install python3-mysqldb
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  python3-mysqldb
+0 upgraded, 1 newly installed, 0 to remove and 50 not upgraded.
+Need to get 48.8 kB of archives.
+After this operation, 181 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 python3-mysqldb amd64 1.4.6-1build1 [48.8 kB]
+Fetched 48.8 kB in 1s (81.1 kB/s)
+Selecting previously unselected package python3-mysqldb.
+(Reading database ... 32217 files and directories currently installed.)
+Preparing to unpack .../python3-mysqldb_1.4.6-1build1_amd64.deb ...
+Unpacking python3-mysqldb (1.4.6-1build1) ...
+Setting up python3-mysqldb (1.4.6-1build1) ...
+benholko2001@LAPTOP-PAVD2557:~$ sudo pip3 install -U mysqlclient
+Requirement already satisfied: mysqlclient in /usr/lib/python3/dist-packages (1.4.6)
+Collecting mysqlclient
+  Downloading mysqlclient-2.1.1.tar.gz (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.1/88.1 KB 2.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [16 lines of output]
+      /bin/sh: 1: mysql_config: not found
+      /bin/sh: 1: mariadb_config: not found
+      /bin/sh: 1: mysql_config: not found
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-xk52ajl0/mysqlclient_375d297230474852970696c248e4ff3b/setup.py", line 15, in <module>
+          metadata, options = get_config()
+        File "/tmp/pip-install-xk52ajl0/mysqlclient_375d297230474852970696c248e4ff3b/setup_posix.py", line 70, in get_config
+          libs = mysql_config("libs")
+        File "/tmp/pip-install-xk52ajl0/mysqlclient_375d297230474852970696c248e4ff3b/setup_posix.py", line 31, in mysql_config
+          raise OSError("{} not found".format(_mysql_config_path))
+      OSError: mysql_config not found
+      mysql_config --version
+      mariadb_config --version
+      mysql_config --libs
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+benholko2001@LAPTOP-PAVD2557:~$ sudo mysql_secure_installation
+
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we'll need the current
+password for the root user. If you've just installed MariaDB, and
+haven't set the root password yet, you should just press enter here.
+
+Enter current password for root (enter for none):
+ERROR 2002 (HY000): Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none):
+ERROR 2002 (HY000): Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none):
+ERROR 2002 (HY000): Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none):
+ERROR 2002 (HY000): Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)
+Enter current password for root (enter for none):
+[1]+  Stopped                 sudo mysql_secure_installation
+benholko2001@LAPTOP-PAVD2557:~$ sudo pip3 install -U mysqlclient
+Requirement already satisfied: mysqlclient in /usr/lib/python3/dist-packages (1.4.6)
+Collecting mysqlclient
+  Using cached mysqlclient-2.1.1.tar.gz (88 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [16 lines of output]
+      /bin/sh: 1: mysql_config: not found
+      /bin/sh: 1: mariadb_config: not found
+      /bin/sh: 1: mysql_config: not found
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-iikxan4i/mysqlclient_46e5e9c97cfc47bba5e35debfc0e6f03/setup.py", line 15, in <module>
+          metadata, options = get_config()
+        File "/tmp/pip-install-iikxan4i/mysqlclient_46e5e9c97cfc47bba5e35debfc0e6f03/setup_posix.py", line 70, in get_config
+          libs = mysql_config("libs")
+        File "/tmp/pip-install-iikxan4i/mysqlclient_46e5e9c97cfc47bba5e35debfc0e6f03/setup_posix.py", line 31, in mysql_config
+          raise OSError("{} not found".format(_mysql_config_path))
+      OSError: mysql_config not found
+      mysql_config --version
+      mariadb_config --version
+      mysql_config --libs
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+benholko2001@LAPTOP-PAVD2557:~$ ^C
+benholko2001@LAPTOP-PAVD2557:~$ ^C
+benholko2001@LAPTOP-PAVD2557:~$ django-admin startproject stevens
+benholko2001@LAPTOP-PAVD2557:~$ cd stevens
+benholko2001@LAPTOP-PAVD2557:~/stevens$ ls
+manage.py  stevens
+benholko2001@LAPTOP-PAVD2557:~/stevens$ python3 manage.py startapp myapp
+benholko2001@LAPTOP-PAVD2557:~/stevens$ ls
+manage.py  myapp  stevens
+benholko2001@LAPTOP-PAVD2557:~/stevens$  sudo mysql -u root -p
+Enter password:
+ERROR 2002 (HY000): Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)
+benholko2001@LAPTOP-PAVD2557:~/stevens$
+
+
+
+WIFI DOES NOT ALLOW FOR DJANGO TO RUN THROUGH ANY PORTS< SERVER CANNOT BE ESTABLISHED.
